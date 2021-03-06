@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 feature-img: "assets/img/pexels/rainbow.jpg"
-tags: [About, Archive]
+tags: [About]
 ---
 
 Hi, I'm Anna and welcome to my website :)
