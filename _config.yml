@@ -3,13 +3,13 @@ baseurl: ""
 url: "https://annachen.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
-title: Anna Inn-Tung Chen                               # site's title
+title: Anna's Posts # site's title
 description: "Personal webside of Anna Chen"            # used by search engines
 avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
-header_text: Just something here and there  # Change Blog header text
+header_text: Stuff  # Change Blog header text
 header_feature_image: assets/img/pexels/triangular.jpeg
 footer_text: >
   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
