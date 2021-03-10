@@ -23,6 +23,8 @@ layout: default
   {% endif %}
   </section>
 
+  <br/><br/><br/>
+
   <!-- Social media shares -->
   {% include share_buttons.html %}
 
@@ -48,18 +50,18 @@ layout: default
       background-repeat: no-repeat;
       background-position: center;
   }
-  
+
   {% if page.color %}
   .feature-image a { color: {{ page.color }} !important; }
   div#post-nav a { color: {{ page.color }} !important; }
   footer a { color: {{ page.color }} !important; }
   .site-header nav a:hover {  color: {{ page.color }} !important; }
-  header#main { 
+  header#main {
       background-color: {{ page.color }} !important;
       background-image: url('{{ site.color_image | relative_url }}');
   }
   {% endif %}
-  
+
   {% if page.feature-img %}
   header#main { background-image: url('{{ page.feature-img | relative_url }}'); }
   {% endif %}

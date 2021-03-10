@@ -12,4 +12,6 @@ I'm a researcher and engineer in artifical intelligence / machine learning, spec
 
 Since a few month ago I've been taking some time off from work and exploring topics that interest me. Possibly due to the constraint I have by being at home with only 2 GPUs at my disposal, I'm interested in methods that'd allow deep learning to generalize better, train more efficiently, better reuse previously learned knowledge, use less resource, or use less (labeled) data.
 
-Besides, I'm also interested in applying AI to art-related applications, since I have also been (or want to be) an artist my whole life. Some topics that I've been reading about are sketch understanding, scene understanding, style transfer, modeling and 2D animation.
+Besides, I'm also interested in applying AI to art-related applications, since I have been (or want to be) an artist my whole life. Some topics that I've been reading about are sketch understanding, scene understanding, style transfer, modeling and 2D animation.
+
+If you would like to contact me regarding anything on this website (or any other subject), please reach out to anna1110 at gmail dot com.
