@@ -1,11 +1,11 @@
 ---
 layout: post
-title: My first GAN!
+title: Texture GAN
 tags: [GAN]
 excerpt_separator: <!--more-->
 ---
 
-I've been hearing about GANs and seeing lots of incredibly well generated images from GANs in the past years, but I've never got around training one. Recently I finally have something that I want to generate, and something that GANs should be able to generate - textures.
+Recently I have been reading about texture generation and interpolation, and I thought it'd be something interesting if we could generate textures with GANs. Ideally, similar to the [GauGAN work](https://arxiv.org/pdf/1903.07291.pdf), we can specify the layout of an image and let the GAN fill out the textures.
 
 There're a few papers on texture synthesis out there, but this one called [Spatial GAN](https://arxiv.org/pdf/1611.08207.pdf) caught my eye - mostly because of the simplicity of it. It's an earlier GAN paper and the architecture and training still mostly follows DCGAN. However, the architecture is fully convolutional, and can be used to generate different sizes of texture images at test time.
 
@@ -41,7 +41,8 @@ And there we go:
 
 <p align="center"><img src="/assets/img/first_gan/generated5.png"/></p>
 
-That was my first GAN experience. A few thoughts:
+A few thoughts:
 - Following the recommendations in the [DCGAN paper](https://arxiv.org/pdf/1511.06434.pdf), it was pretty straightforward to get something working (as long as you don't forget to normalize the value range of the real images like me ;P)
 - There were a few trials where the discriminator was overpowering and winning all the time (loss of the discriminator stays at ~0). Keeping the generator and the discriminator "mirrored" of each other works pretty well.
-- Generating larger textures (than the size used in training) doesn't always work well. It depends on the texture's global structure and also the network architecture. I'm still looking into this, hoping I'll have more to say soon.
+- Generating larger textures (than the size used in training) doesn't always work well. It depends on the texture's global structure and also the network architecture.
+- In training, using at least 8x8 at the top of the network makes the results better when generating larger images at test time. It might be due to the way the network is padded, and having a larger non-edge area in training helps the network learn how to repeat similar content spatially.

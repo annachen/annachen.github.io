@@ -5,16 +5,6 @@ tags: [GAN, art]
 excerpt_separator: <!--more-->
 ---
 
-![Coral bubbles]({{ "/assets/img/paint_w_texture/coral_bubbles.png" | relative_url }})
-
-<p align="center"><i>title: coral bubbles</i></p>
-
-<br/>
-
-_____________
-
-<br/>
-
 In the [previous post](/2021/03/07/first-gan.html) we've developed a texture generating GAN that is able to convert a small patch of noise to a higher resolution texture:
 
 <p align="center"><img src="/assets/img/paint_w_texture/noise_to_tx.png"/></p>
@@ -36,5 +26,3 @@ One pretty obvious artifact of the approach is at the boundary of two different 
 I experimented with sampling two types of textures at training time, although the difference is hard to quantify. Here's an example from this model:
 
 <p align="center"><img src="/assets/img/paint_w_texture/rainrainrain.png"/></p>
-
-There are some sharp edges though, so that's a good sign :)
