@@ -6,7 +6,7 @@ date: May, 10 2021
 tags: []
 ---
 
-This page aggregates posts related to topics and thoughts around shape and texture, and some reference link
+This page aggregates posts related to meta learning and continual learning.
 
 <!--
 ## Content
