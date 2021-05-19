@@ -23,7 +23,7 @@ Most recent on top:
 
 - [Implicit fields for shape](/2021/04/15/implicit-field-for-shape.html)
 - [Paint with texture](/2021/03/11/paint-w-texture.html)
-- [My first GAN](/2021/03/07/first-gan.html)
+- [Texture GAN](/2021/03/07/first-gan.html)
 
 <br/>
 
