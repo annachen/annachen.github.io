@@ -19,7 +19,7 @@ In this example, I used random crops from some of [my paintings](https://goo.gl/
 
 One interesting thing I observed when creating this palette is that I have a preference for a subset of colors in my painting. There're few very saturated colors and I like brown, orange, red, blue more than green. While in general I think this is true, some mode collapse of the GAN probably also contributed.
 
-The rest is easy: using the palette, we can convert an image input to the spatial latent code, sample some noise, and pass it through the generator.
+The rest is easy: using the palette, we can convert an image input to the spatial latent code, sample some noise, and pass it through the generator. Code for creating the palette and generating images can be found [here](https://github.com/annachen/dl_playground/tree/main/exps/texture_gan).
 
 One pretty obvious artifact of the approach is at the boundary of two different types of texture. Since at training time, the generator is only trained to create uniform texture through out the image, it's expected that the network doesn't know how to handle texture changes. I applied some Gaussian blurring to the latent map so that the changes in texture is smoother, which also results in the generated image seeming blurry at boundaries.
 

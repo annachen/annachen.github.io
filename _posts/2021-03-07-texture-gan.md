@@ -46,3 +46,5 @@ A few thoughts:
 - There were a few trials where the discriminator was overpowering and winning all the time (loss of the discriminator stays at ~0). Keeping the generator and the discriminator "mirrored" of each other works pretty well.
 - Generating larger textures (than the size used in training) doesn't always work well. It depends on the texture's global structure and also the network architecture.
 - In training, using at least 8x8 at the top of the network makes the results better when generating larger images at test time. It might be due to the way the network is padded, and having a larger non-edge area in training helps the network learn how to repeat similar content spatially.
+
+Code for training the texture GAN can be found [here](https://github.com/annachen/dl_playground/blob/main/exps/texture_gan/single_img.py).
